@@ -13,7 +13,7 @@
 </style>
 </head>
 <body>
-<button id="printButton" onclick="printHide()">Print Your Adventures!</button>
+<button id="printButton" onclick="window.print();">Print Your Adventures!</button>
 <h1 id="main-page">You are Galroc, a famous explorer. You have been requested to travel the world to look for an ancient artifact. You are unsure of where to look. It could be anywhere. Where do you want to look? <br> <button onclick="backYard()">A.</button> THE BACKYARD <br> <button onclick="neighborhood()">B.</button> THE NEIGHBORHOOD <br> C. EGYPT <br> D. AMERICA</h1>
 <h1 id="Backyard-Main"><b>YOU CHOSE BACKYARD.</b></h1>
 <h1 id="Neighborhood-Main"><b>YOU CHOSE NEIGHBORHOOD.</b></h1>
@@ -36,13 +36,6 @@
         backyMain.style.display = "block";
         var neighMain = document.getElementById("Backyard-Main");
         neighMain.style.display = "none";
-    }
-</script>
-<script>
-    function printHide() {
-        var printButton = document.getElementById("printButton");
-        printButton.style.display = "none";
-        window.print();
     }
 </script>
 </body>
