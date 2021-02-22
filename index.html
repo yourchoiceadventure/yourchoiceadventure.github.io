@@ -10,6 +10,12 @@
     #Neighborhood-Main {
         display: none;
     }
+    #Egypt-Main {
+        display: none;
+    }
+    #backP {
+        display: none;
+    }
 </style>
 </head>
 <body>
@@ -18,7 +24,7 @@
 <h1 id="Backyard-Main"><b>YOU CHOSE BACKYARD.</b></h1>
 <h1 id="Neighborhood-Main"><b>YOU CHOSE NEIGHBORHOOD.</b></h1>
 <h1 id="Egypt-Main"><b>YOU CHOSE EGYPT.</b></h1>
-<h1>You decide to go to your house’s backyard to find the artifact. As you arrive, you stay low to the ground to not catch any suspicion.</h1>
+<h1 id="backyardP">You decide to go to your house’s backyard to find the artifact. As you arrive, you stay low to the ground to not catch any suspicion.</h1>
 <script>
     function backYard() {
         var mainPage = document.getElementById("main-page");
@@ -28,7 +34,9 @@
         var neighMain = document.getElementById("Neighborhood-Main");
         neighMain.style.display = "none";
         var egMain = document.getElementById("Egypt-Main");
-       egMain.style.display = "none";
+        egMain.style.display = "none";
+        var backP = document.getElementById("backyardP");
+        backP.style.display = "block";
     }
 </script>
 <script>
@@ -41,6 +49,8 @@
        neighMain.style.display = "none";
        var egMain = document.getElementById("Egypt-Main");
        egMain.style.display = "none";
+       var backP = document.getElementById("backyardP");
+       backP.style.display = "none";
     }
 </script>
 <script>
@@ -53,6 +63,8 @@
        neighMain.style.display = "none";
        var egMain = document.getElementById("Egypt-Main");
        egMain.style.display = "block";
+       var backP = document.getElementById("backyardP");
+       backP.style.display = "none";
     }
 </script>
 </body>
