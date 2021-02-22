@@ -16,6 +16,9 @@
     #backyardP {
         display: none;
     }
+    #America-Main {
+        display: none;
+    }
 </style>
 </head>
 <body>
@@ -24,6 +27,7 @@
 <h1 id="Backyard-Main"><b>YOU CHOSE BACKYARD.</b></h1>
 <h1 id="Neighborhood-Main"><b>YOU CHOSE NEIGHBORHOOD.</b></h1>
 <h1 id="Egypt-Main"><b>YOU CHOSE EGYPT.</b></h1>
+<h1 id="America-Main"><b>YOU CHOSE AMERICA.</b></h1>
 <h1 id="backyardP">You decide to go to your house’s backyard to find the artifact. As you arrive, you stay low to the ground to not catch any suspicion.</h1>
 <script>
     function backYard() {
@@ -37,6 +41,8 @@
         egMain.style.display = "none";
         var backP = document.getElementById("backyardP");
         backP.style.display = "block";
+        var AM = document.getElementById("America-Main");
+        AM.style.display = "none";
     }
 </script>
 <script>
@@ -51,6 +57,8 @@
        egMain.style.display = "none";
        var backP = document.getElementById("backyardP");
        backP.style.display = "none";
+       var AM = document.getElementById("America-Main");
+       AM.style.display = "none";
     }
 </script>
 <script>
@@ -65,6 +73,24 @@
        egMain.style.display = "block";
        var backP = document.getElementById("backyardP");
        backP.style.display = "none";
+       var AM = document.getElementById("America-Main");
+       AM.style.display = "none";
+    }
+</script>
+<script>
+    function America() {
+       var mainPage = document.getElementById("main-page");
+       mainPage.style.display = "none";
+       var backyMain = document.getElementById("Neighborhood-Main");
+       backyMain.style.display = "none";
+       var neighMain = document.getElementById("Backyard-Main");
+       neighMain.style.display = "none";
+       var egMain = document.getElementById("Egypt-Main");
+       egMain.style.display = "none";
+       var backP = document.getElementById("backyardP");
+       backP.style.display = "none";
+       var AM = document.getElementById("America-Main");
+       AM.style.display = "block";
     }
 </script>
 </body>
