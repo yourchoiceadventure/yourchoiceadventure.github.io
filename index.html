@@ -19,6 +19,9 @@
     #America-Main {
         display: none;
     }
+    #neighborhoodP {
+        display: none;
+    }
 </style>
 </head>
 <body>
@@ -29,20 +32,23 @@
 <h1 id="Egypt-Main"><b>YOU CHOSE EGYPT.</b></h1>
 <h1 id="America-Main"><b>YOU CHOSE AMERICA.</b></h1>
 <h1 id="backyardP">You decide to go to your house’s backyard to find the artifact. As you arrive, you stay low to the ground to not catch any suspicion.</h1>
+<h1 id="neighborhoodP">You decide to head out into the neighborhood and start searching. As you run into the streets, you come across a skeptical man, peering around suspiciously. You find he may be hiding something, so you think about checking out what he’s doing. What do you do?</h1>
 <script>
-    function backYard() {
-        var mainPage = document.getElementById("main-page");
-        mainPage.style.display = "none";
-        var backyMain = document.getElementById("Backyard-Main");
-        backyMain.style.display = "block";
-        var neighMain = document.getElementById("Neighborhood-Main");
-        neighMain.style.display = "none";
-        var egMain = document.getElementById("Egypt-Main");
-        egMain.style.display = "none";
-        var backP = document.getElementById("backyardP");
-        backP.style.display = "block";
-        var AM = document.getElementById("America-Main");
-        AM.style.display = "none";
+   function backYard() {
+       var mainPage = document.getElementById("main-page");
+       mainPage.style.display = "none";
+       var backyMain = document.getElementById("Backyard-Main");
+       backyMain.style.display = "block";
+       var neighMain = document.getElementById("Neighborhood-Main");
+       neighMain.style.display = "none";
+       var egMain = document.getElementById("Egypt-Main");
+       egMain.style.display = "none";
+       var backP = document.getElementById("backyardP");
+       backP.style.display = "block";
+       var AM = document.getElementById("America-Main");
+       AM.style.display = "none";
+       var par = document.getElementById("neighborhoodP");
+       par.style.display = "none";
     }
 </script>
 <script>
@@ -59,6 +65,8 @@
        backP.style.display = "none";
        var AM = document.getElementById("America-Main");
        AM.style.display = "none";
+       var par = document.getElementById("neighborhoodP");
+       par.style.display = "block";
     }
 </script>
 <script>
@@ -75,6 +83,8 @@
        backP.style.display = "none";
        var AM = document.getElementById("America-Main");
        AM.style.display = "none";
+       var par = document.getElementById("neighborhoodP");
+       par.style.display = "none";
     }
 </script>
 <script>
@@ -91,6 +101,8 @@
        backP.style.display = "none";
        var AM = document.getElementById("America-Main");
        AM.style.display = "block";
+       var par = document.getElementById("neighborhoodP");
+       par.style.display = "none";
     }
 </script>
 </body>
